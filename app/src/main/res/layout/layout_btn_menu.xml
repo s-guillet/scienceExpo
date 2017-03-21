@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:paddingStart="420dp">
+
+        <Button
+            android:id="@+id/btnPart1"
+            android:layout_width="@dimen/taille_x_btn_menu"
+            android:layout_height="@dimen/taille_y_btn_menu"
+            android:text="btnPart1"
+            android:onClick="onClickBtnPart1"
+            android:layout_marginLeft="@dimen/espace_btn_menu"
+            android:alpha="0"/>
+
+        <Button
+            android:id="@+id/btnPart2"
+            android:layout_width="@dimen/taille_x_btn_menu"
+            android:layout_height="@dimen/taille_y_btn_menu"
+            android:text="btnPart2"
+            android:onClick="onClickBtnPart2"
+            android:layout_marginLeft="@dimen/espace_btn_menu"
+            android:alpha="0"/>
+
+        <Button
+            android:id="@+id/btnPart3"
+            android:layout_width="@dimen/taille_x_btn_menu"
+            android:layout_height="@dimen/taille_y_btn_menu"
+            android:text="btnPart3"
+            android:onClick="onClickBtnPart3"
+            android:layout_marginLeft="@dimen/espace_btn_menu"
+            android:alpha="0"/>
+
+        <Button
+            android:id="@+id/btnPart4"
+            android:layout_width="@dimen/taille_x_btn_menu"
+            android:layout_height="@dimen/taille_y_btn_menu"
+            android:text="btnPart4"
+            android:onClick="onClickBtnPart4"
+            android:layout_marginLeft="@dimen/espace_btn_menu"
+            android:alpha="0"/>
+
+    </GridLayout>
+
+</LinearLayout>

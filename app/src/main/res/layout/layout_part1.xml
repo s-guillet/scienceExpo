@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+   <ImageView
+        android:layout_width="1024px"
+        android:layout_height="600px"
+        android:id="@+id/imageView"
+        android:src="@drawable/interface1"
+        android:minWidth="1024dp"
+        android:minHeight="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:text="part1"
+        android:textSize="50dp"
+        android:id="@+id/textView"
+        android:alpha="0"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <include
+        layout="@layout/layout_btn_menu"
+        android:layout_width="1024dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/include" />
+
+    <Button
+        android:id="@+id/btnVersPageVideo"
+        android:layout_width="@dimen/taille_x_btn_menu"
+        android:layout_height="@dimen/taille_x_btn_menu"
+        android:text="New Button"
+        android:alpha="0"
+        android:layout_marginEnd="110dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/include" />
+
+    <Button
+        android:id="@+id/btnVersPageAudio"
+        android:layout_width="@dimen/taille_x_btn_menu"
+        android:layout_height="@dimen/taille_x_btn_menu"
+        android:text="btnVersPageAudio"
+        android:alpha="0"
+        android:layout_marginEnd="170dp"
+        android:layout_below="@+id/btnVersPageVideo"
+        android:layout_alignEnd="@+id/btnVersPageVideo"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="1024px"
+        android:layout_height="600px"
+        android:id="@+id/imageDeFond"
+        android:background="#b2b082"
+        android:alpha="0.7"
+        android:minWidth="1024dp"
+        android:minHeight="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnVolAugmente"
+        android:layout_width="@dimen/taille_x_btn_video_action"
+        android:layout_height="@dimen/taille_y_btn_video_action"
+        android:background="@drawable/son_augmente"
+        android:layout_marginEnd="130dp"
+        android:layout_above="@+id/btnLecture"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnVolDiminue"
+        android:layout_width="@dimen/taille_x_btn_video_action"
+        android:layout_height="@dimen/taille_y_btn_video_action"
+        android:background="@drawable/son_diminue"
+        android:layout_below="@+id/btnLecture"
+        android:layout_alignStart="@+id/btnVolAugmente" />
+
+    <TextView
+        android:id="@+id/textVolSonor"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:textSize="70dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="right"
+        android:text=""
+        android:layout_alignBaseline="@+id/btnLecture"
+        android:layout_alignBottom="@+id/btnLecture"
+        android:layout_alignStart="@+id/btnVolAugmente"
+        android:layout_toStartOf="@+id/textsurdix"
+        android:textColor="#ffcc00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textsurdix"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="/15"
+        android:textSize="50dp"
+        android:layout_alignBaseline="@+id/textVolSonor"
+        android:layout_alignBottom="@+id/textVolSonor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:textColor="#ffcc00"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLecture"
+        android:layout_width="@dimen/taille_x_btn_video_action"
+        android:layout_height="@dimen/taille_y_btn_video_action"
+        android:background="@drawable/lecture"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnRetourMenu"
+        android:layout_width="@dimen/taille_x_btn_video_action"
+        android:layout_height="@dimen/taille_y_btn_video_action"
+        android:background="@drawable/retour"
+        android:layout_alignTop="@+id/btnLecture"
+        android:layout_toStartOf="@+id/btnLecture"
+        android:layout_marginEnd="211dp"/>
+
+</RelativeLayout>

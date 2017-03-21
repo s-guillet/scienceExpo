@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="espace_btn_menu">25dp</dimen>
+    <dimen name="taille_x_btn_menu">100dp</dimen>
+    <dimen name="taille_y_btn_menu">130dp</dimen>
+
+    <dimen name="taille_x_btn_video_action">130dp</dimen>
+    <dimen name="taille_y_btn_video_action">130dp</dimen>
+</resources>
